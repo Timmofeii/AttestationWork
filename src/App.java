@@ -3,11 +3,11 @@ import java.io.IOException;
 
 public class App {
     public void start(String file_path) {
-        MyParser parser= new MyParser();
-       Counter counter= new Counter();
-        String[]arrFruits;
+        MyParser parser = new MyParser();
+        Counter counter = new Counter();
+        String[] arrFruits;
         try {
-             arrFruits=parser.pars(file_path);
+            arrFruits = parser.pars(file_path);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
